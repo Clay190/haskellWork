@@ -62,7 +62,8 @@ allThousands = [1000..9999]
   [6,5,4,3,2,3,4,5,6,7,8,9,10]
 -}
 
-integersUpDownUp a b c d = (allIntegersInclusive a b) ++ (allIntegersExcludingFirst c d)
+integersUpDownUp a b c d = (allIntegersInclusive a b) ++ (allIntegersExcludingFirst b c) ++ (allIntegersExcludingFirst c d)
+
 
 {-
   Create a function called isDivisor that accepts two integers n and d and
