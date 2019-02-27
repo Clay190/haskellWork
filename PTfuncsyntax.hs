@@ -164,6 +164,6 @@ listInt a = show (head a) ++ listInt (tail a)
   466366764648438626
 -}
 
---wordsToPhone :: String -> Int
+wordsToPhone :: String -> Int
 wordsToPhone a = numListToNum (newList a)
 newList a = [charToPhoneDigit x | x <- a, x /= ' ' && x /= ',']
